@@ -1491,3 +1491,14 @@ const fourteeners = {
 // console.log(findClass2Routes('frontRange', 'class 2')); 
 
 // Question 3: How many routes are in the front range?
+
+const findNumRoutes = (range) => {
+  let totalRoutes = Object.values(fourteeners[range].peaks)
+    .reduce((sumOfRoutes, peak) => {
+      sumOfRoutes += peak.numberOfRoutes;
+      return sumOfRoutes;
+    }, 0)
+  return totalRoutes;
+}
+
+console.log(findNumRoutes('frontRange'));
