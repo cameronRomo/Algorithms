@@ -1455,7 +1455,7 @@ const fourteeners = {
   }
 }
 
-// Question 1: return an array of all of the peaks that are over 14000
+// Question 1: return an array of all of the peaks that are over 14000.
 
 // const findFourteeners = () => {
 //   const overFourteenPeaks = [];
@@ -1473,19 +1473,21 @@ const fourteeners = {
 
 // console.log(findFourteeners());
 
-// Question 2: create an array of all of the class 2 routes within the front range
+// Question 2: create an array of all of the class 2 routes within the front range.
 // ['south ridge', 'southwest ridge', etc...]
 
-const findClass2Routes = (range, routeClass) => {
-  let class2Routes = [];
+// const findClass2Routes = (range, routeClass) => {
+//   let class2Routes = [];
 
-  Object.values(fourteeners[range].peaks).map(peak => {
-   Object.entries(peak.routes).map(route => {
-     if (route[1].difficulty === routeClass) 
-      class2Routes.push(route[0]);
-    })   
-  })
-  return class2Routes;
-}
+//   Object.values(fourteeners[range].peaks).map(peak => {
+//    Object.entries(peak.routes).map(route => {
+//      if (route[1].difficulty === routeClass) 
+//       class2Routes.push(route[0]);
+//     })   
+//   })
+//   return class2Routes;
+// }
 
-console.log(findClass2Routes('frontRange', 'class 2')); 
+// console.log(findClass2Routes('frontRange', 'class 2')); 
+
+// Question 3: How many routes are in the front range?
