@@ -1457,18 +1457,21 @@ const fourteeners = {
 
 // Question 1: return an array of all of the peaks that are over 14000
 
-const findFourteeners = () => {
-  const overFourteenPeaks = [];
+// const findFourteeners = () => {
+//   const overFourteenPeaks = [];
 
-  let ranges = Object.keys(fourteeners);
+//   let ranges = Object.keys(fourteeners);
 
-  ranges.map(range => {
-    Object.entries(fourteeners[range].peaks).map(peak => {
-      if (peak[1].elevation >= 14000) 
-        overFourteenPeaks.push(peak[0])
-    })
-  })
-  return overFourteenPeaks;
-}
+//   ranges.map(range => {
+//     Object.entries(fourteeners[range].peaks).map(peak => {
+//       if (peak[1].elevation >= 14000) 
+//         overFourteenPeaks.push(peak[0])
+//     })
+//   })
+//   return overFourteenPeaks;
+// }
 
-console.log(findFourteeners());
+// console.log(findFourteeners());
+
+// Question 2: create an array of all of the class 2 routes within the front range
+// ['south ridge', 'southwest ridge', etc...]
